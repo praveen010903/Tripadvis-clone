@@ -1,0 +1,353 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lexend Deca", sans-serif;
+}
+
+/* Container Styles */
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.s-1 img {
+    width: 60%;
+}
+
+.section-menu {
+    display: flex;
+    gap: 25px;
+    align-items: center;
+}
+
+.inr img {
+    width: 10px;
+}
+
+.s-1 img {
+    width: 60%;
+}
+
+.Sign {
+    border: solid black 2px;
+    border-radius: 20px;
+    background-color: black;
+    color: beige;
+    padding: 5px;
+    font-size: smaller;
+}
+
+.s-2 {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.to {
+    font-size: 160%;
+    text-align: center;
+}
+
+.section-2 {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 25px;
+}
+
+.section-2 img {
+    width: 17px;
+    cursor: pointer;
+}
+
+.section-2 button {
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.section-2 button:hover {
+    border-bottom: solid 2px;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: solid black 1px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 45%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0;
+}
+
+.search-bar input {
+    border: none;
+    width: 100%;
+    background-color: transparent;
+}
+
+.search-bar input:focus {
+    outline: none;
+}
+
+.beta img {
+    width: 10%;
+    display: block;
+    margin: 50px auto;
+}
+
+.Card {
+    background-color: beige;
+    border: solid beige 1px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.Card img {
+    width: 10%;
+    cursor: pointer;
+}
+
+.t2 {
+    background-color: bisque;
+    border-radius: 20px;
+    border: solid bisque 1px;
+    padding: 5px;
+    font-size: smaller;
+}
+
+.t3 {
+    width: 80%;
+}
+
+.s-3,
+.chennai,
+.top-1 {
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.icon,
+.places {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.hotels,
+.hotels-1 {
+    position: relative;
+}
+
+.hotels img,
+.hotels-1 img {
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.par-1 {
+    position: absolute;
+    color: white;
+    bottom: 20px;
+    left: 10px;
+    font-size: larger;
+}
+
+.course-card img {
+    width: 100%;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.recommended-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.course-card {
+    margin: 5px;
+    font-size: smaller;
+    width: calc(100% / 4 - 20px);
+}
+
+.course-card h3 {
+    width: 100%;
+}
+
+.more-to {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: blanchedalmond;
+    padding: 10px;
+}
+
+.sec-1 img {
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.footer {
+    background-color: beige;
+    color: black;
+    padding: 10px;
+}
+
+.footer-one {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-one>div {
+    flex: 1;
+    min-width: 200px;
+}
+
+.footer-two {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.footer p:hover {
+    text-decoration: underline;
+    color: #5F5F5F;
+}
+
+.dropdown {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.dropdown select {
+    padding: 5px;
+    border-radius: 5px;
+    border: solid 1px black;
+}
+
+.logo_img {
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+}
+
+.logo_img i {
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .s-1 {
+        margin: 0 auto;
+    }
+
+    .section-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .inr,
+    .Sign {
+        margin: 0 auto;
+     display: none;
+    }
+
+    .to {
+        margin: 0;
+        text-align: center;
+    }
+
+    .section-2 {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .search-bar {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .Card {
+        width: 80%;
+        margin: 10px auto;
+    }
+
+    .course-card {
+        width: calc(100% / 2 - 20px);
+    }
+
+    .footer-two {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section-2 button {
+        font-size: 16px;
+    }
+
+    .Card {
+        width: 90%;
+    }
+
+    .course-card {
+        width: 100%;
+    }
+
+    .places {
+        flex-direction: column;
+    }
+
+    .footer-one {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-two {
+        flex-direction: column;
+    }
+
+    .dropdown {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .logo_img {
+        justify-content: center;
+    }
+}

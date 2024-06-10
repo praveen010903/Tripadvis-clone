@@ -27,7 +27,7 @@ body {
 }
 
 .inr img {
-    width: 10px;
+    width: 25px;
 }
 
 .s-1 img {
@@ -204,9 +204,16 @@ body {
 }
 
 .sec-1 img {
-    width: 100%;
+    width: 60%;
+    height: 70%;
     border-radius: 10px;
     cursor: pointer;
+    align-items: center;
+    margin-left: 100px;
+}
+
+.sec-1 p{
+    margin-left: 100px;
 }
 
 .footer {
